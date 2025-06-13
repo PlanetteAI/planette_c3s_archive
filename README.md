@@ -1,8 +1,6 @@
 # Planette's C3S Seasonal Forecast Data
 
-<div align="center">
-  <img src="planette_icon.png" alt="Planette Logo" width="200"/>
-</div>
+<img src="planette_icon.png" alt="Planette Logo" width="300"/>
 
 ## Overview
 
