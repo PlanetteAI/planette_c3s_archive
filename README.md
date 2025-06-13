@@ -1,5 +1,9 @@
 # Planette's C3S Seasonal Forecast Data
 
+<div align="center">
+  <img src="planette_icon.png" alt="Planette Logo" width="200"/>
+</div>
+
 ## Overview
 
 The C3S seasonal forecast dataset provides global, daily, probabilistic forecasts of the Earth system, enabling users to assess the likelihood of future climate states. These forecasts are particularly valuable for studying slowly evolving climate patterns such as El Niño, La Niña, and the North Atlantic Oscillation (NAO), which can be predicted with greater skill than the chaotic atmosphere.
