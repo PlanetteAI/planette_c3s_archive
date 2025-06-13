@@ -38,26 +38,28 @@ The planette C3S archive stores this data in cloud native format for easy access
 | u850                    | m/s       | Zonal wind at 850 hPa                       |
 | u500                    | m/s       | Zonal wind at 500 hPa                       |
 | u200                    | m/s       | Zonal wind at 200 hPa                       |
-| u100                    | m/s       | Zonal wind at 100 hPa                       |
 | **Meridional Wind (m/s)** |         |                                             |
 | v850                    | m/s       | Meridional wind at 850 hPa                  |
 | v500                    | m/s       | Meridional wind at 500 hPa                  |
 | v200                    | m/s       | Meridional wind at 200 hPa                  |
-| v100                    | m/s       | Meridional wind at 100 hPa                  |
 
 ### Surface and Column Variables
 
 | Variable                | Units     | Description                                 |
 |-------------------------|-----------|---------------------------------------------|
 | t2m                     | K         | 2 meter temperature                         |
-| t2m_max                 | K         | Daily maximum 2 meter temperature          |
-| t2m_min                 | K         | Daily minimum 2 meter temperature          |
-| t2d                     | K         | 2 meter dew point temperature              |
-| slp                     | hPa       | Sea level pressure                         |
-| SST                     | K         | Sea surface temperature                    |
-| tsoil                   | K         | Soil temperature (top layer)               |
-| olr                     | W/m²      | Top of atmosphere net thermal radiation    |
-| tcwv                    | kg/m²     | Total column water vapor                   |
+| t2m_max                 | K         | Daily maximum 2 meter temperature           |
+| t2m_min                 | K         | Daily minimum 2 meter temperature           |
+| u10m                    | m/s       | 10 meter zonal wind                         |
+| v10m                    | m/s       | 10 meter meridional wind                    |
+| u100m                   | m/s       | 100 meter zonal wind                        |
+| v100m                   | m/s       | 100 meter meridional wind                   |
+| t2d                     | K         | 2 meter dew point temperature               |
+| slp                     | hPa       | Sea level pressure                          |
+| SST                     | K         | Sea surface temperature                     |
+| tsoil                   | K         | Soil temperature (top layer)                |
+| olr                     | W/m²      | Top of atmosphere net thermal radiation     |
+| tcwv                    | kg/m²     | Total column water vapor                    |
 
 ## Temporal Coverage
 
