@@ -20,6 +20,7 @@ Collabs:
       - weather
       - forecasting
       - seasonal
+      - subseasonal
 Tags:
   - aws-pds
   - climate
