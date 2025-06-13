@@ -9,7 +9,7 @@ Description: |
   be updated as they are processed into cloud native format. 
 
   The planette C3S archive stores this data in cloud native format for easy access and analysis. 
-Documentation: https://github.com/[YOUR_GITHUB]/c3s-seasonal-forecast-docs
+Documentation: https://github.com/PlanetteAI/planette_c3s_archive/blob/main/README.md
 Contact: aodhan.sweeney@planette.ai
 ManagedBy: Planette.ai
 UpdateFrequency: Monthly
@@ -40,18 +40,18 @@ Citation: |
   Copernicus Climate Change Service, Climate Data Store (CDS). 
   https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-original-single-levels
 Resources:
-  - Description: SEAS5 Seasonal Forecast Hindcasts and Forecasts (Zarr format)
+  - Description: C3S Seasonal Forecast Hindcasts and Forecasts (Zarr format)
     ARN: arn:aws:s3:::planettebaikal/forecast_models/seasonal/seas5/
     Region: us-east-2
     Type: S3 Bucket
     Explore:
-    - '[Browse Dataset](https://planettebaikal.s3.amazonaws.com/index.html#forecast_models/seasonal/seas5/)'
+    - '[Browse Dataset](https://planettebaikal.s3.amazonaws.com/index.html#forecast_models/seasonal/)'
 DataAtWork:
   Tutorials:
     - Title: Accessing C3S Seasonal Forecast Data with Python
-      URL: https://github.com/[YOUR_GITHUB]/c3s-seasonal-forecast-tutorial/blob/main/c3s_seasonal_forecast_tutorial.ipynb
+      URL: https://github.com/PlanetteAI/planette_c3s_archive/blob/main/c3s_seasonal_forecast_tutorial.ipynb
       AuthorName: "Aodhan Sweeney-Jaramillo"
-      AuthorURL: https://github.com/[YOUR_GITHUB]
+      AuthorURL: https://github.com/AodhanSweeney
   Tools & Applications:
     - Title: xarray
       URL: https://docs.xarray.dev/
