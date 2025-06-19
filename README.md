@@ -105,16 +105,16 @@ pip install xarray zarr s3fs
 
 ```python
 import xarray as xr
-import s3fs
+import icechunk as ic
 
-# Set up S3 access (no credentials needed for public data)
-fs = s3fs.S3FileSystem(anon=True)
-
-# Define path to a Zarr store (example: precipitation for 1990)
-zarr_path = 's3://planettebaikal/forecast_models/seasonal/seas5/prod/sys51/hindcasts/pr/day/1latx1lon/seas5_sys51_pr_day_1latx1lon_1990.zarr'
+# get bucket and prefix
+year = 2025 # Forecasts are stored by year, and available from 1981 to present
+variable = "pr" # mean total precipitation rate (kg m-2 s-1)
+bucket = "planettebaikal"
+prefix = f"forecast_models/seasonal/seas5/prod/sys51/hindcasts/{variable}/day/1latx1lon/seas5_sys51_{variable}_day_1latx1lon_{year}.zarr"
 
 # Open the dataset
-ds = xr.open_zarr(fs.get_mapper(zarr_path), consolidated=True)
+ds = xr.open_dataset(session.store, engine="zarr", consolidated=False, decode_timedelta=True, chunks={})
 
 # Explore the data
 print(ds)
